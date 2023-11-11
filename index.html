@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation</title>
+    <link rel="stylesheet" href="Css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <section id="modal">
+        <h4>Confirmation successfuly complited!</h4>
+    </section>
+    <section id="alert">
+        <span>&times</span>
+        <h4>Select the Staff</h4>
+    </section>
+    <section class="reservation reservationone">
+        <div class="reservation-box">
+            <div class="box-left">
+                <ul>
+                    <li><span>1</span>Staff</li>
+                    <li><span>2</span>Service</li>
+                    <li><span>3</span>Date & time</li>
+                    <li><span>4</span>Confirmation</li>
+                </ul>
+            </div>
+            <div class="box-right">
+                <div class="right-box-header">
+                    <h4>Select Staff</h4>
+                </div>
+                <div class="right-box-content">
+                    <ul id="staff"></ul>
+                </div>
+                <div class="right-box-footer">
+                    <button id="staffnext" style="margin-left: 85%;">Next</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="reservation reservationtwo reservationcase">
+        <div class="reservation-box">
+            <div class="box-left">
+                <ul>
+                    <li class="makedtext"><span class="makedpart"><i class="fa-solid fa-check"></i></span> Staff</li>
+                    <li><span>2</span>Service</li>
+                    <li><span>3</span>Date & time</li>
+                    <li><span>4</span>Confirmation</li>
+                </ul>
+            </div>
+            <div class="box-right">
+                <div class="right-box-header">
+                    <h4>Select Services</h4>
+                </div>
+                <div class="right-box-content">
+                    <ul id="services"></ul>
+                </div>
+                <div class="right-box-footer">
+                    <button id="serviceback">Back</button>
+                    <button id="servicenext">Next</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="reservation reservationtree reservationcase">
+        <div class="reservation-box">
+            <div class="box-left">
+                <ul>
+                    <li class="makedtext"><span class="makedpart"><i class="fa-solid fa-check"></i></span> Staff</li>
+                    <li class="makedtext"><span class="makedpart"><i class="fa-solid fa-check"></i></span>Service</li>
+                    <li><span>3</span>Date & time</li>
+                    <li><span>4</span>Confirmation</li>
+                </ul>
+            </div>
+            <div class="box-right">
+                <div class="right-box-header">
+                    <h4>Select Date</h4>
+                </div>
+                <div class="right-box-content">
+                    <div class="dates">
+                        <div class="date-header">
+                            <label for="date">Enter the Date:</label>
+                            <input type="date" id="date" name="date" onchange="handler()">
+                        </div>
+                        <div class="date-content"></div>
+                    </div>
+                </div>
+                <div class="right-box-footer">
+                    <button id="dateback">Back</button>
+                    <button id="datenext">Next</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="reservation reservationfour reservationcase">
+        <div class="reservation-box">
+            <div class="box-left">
+                <ul>
+                    <li class="makedtext"><span class="makedpart"><i class="fa-solid fa-check"></i></span> Staff</li>
+                    <li class="makedtext"><span class="makedpart"><i class="fa-solid fa-check"></i></span>Service</li>
+                    <li class="makedtext"><span class="makedpart"><i class="fa-solid fa-check"></i></span>Date & time
+                    </li>
+                    <li><span>4</span>Confirmation</li>
+                </ul>
+            </div>
+            <div class="box-right">
+                <div class="right-box-header">
+                    <h4>Select Confirmation</h4>
+                </div>
+                <div class="right-box-content">
+                    <ul id="staff"></ul>
+                    <div class="confirmation">
+                        <div class="confirmation-header">
+                            <div class="inpdivres">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" placeholder="Name">
+                            </div>
+                            <div  class="inpdivres">
+                                <label for="lastname">Lastname</label>
+                                <input type="text" id="lastname" placeholder="Lastname">
+                            </div>
+                            <div class="inpdivres">
+                                <label for="email">Email</label>
+                                <input type="text" id="email" placeholder="Email">
+                            </div>
+                            <div class="inpdivres">
+                                <label for="phone">Phone</label>
+                                <input type="text" id="phone" placeholder="Phone">
+                            </div>
+                        </div>
+                        <div class="confirmation-content">
+                            <h5>Staff: <span id="constaffname">Narmin Asadullayeva</span></h5>
+                            <h5>Service: <span id="conservicename">Oral Hygine</span></h5>
+                            <h5>Date: <span id="condatenameone">2022-02-04</span> / <span
+                                    id="condatenametwo">10:00-11:00</span></h5>
+                            <h5>Total: $<span class="btngreen"> 100</span></h5>
+                            <h5></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-box-footer">
+                    <button id="confirimback">Back</button>
+                    <button id="confirimbooking">Confirim Booking</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="js/custom.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

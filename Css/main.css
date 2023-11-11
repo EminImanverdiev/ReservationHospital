@@ -1,0 +1,235 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+.reservation {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-color: rgba(4, 25, 59, 0.9); }
+  .reservation .reservation-box {
+    width: 60%;
+    height: 75%;
+    margin: auto;
+    background-color: white;
+    display: flex; }
+    .reservation .reservation-box .box-left {
+      width: 30%;
+      height: 100%;
+      background-color: #112738; }
+      .reservation .reservation-box .box-left ul {
+        list-style: none;
+        padding-left: 0px !important;
+        padding-top: 40px; }
+        .reservation .reservation-box .box-left ul li {
+          width: 100%;
+          padding: 5px 7px;
+          margin: 30px 10%;
+          font-size: 19px;
+          color: #9c9a9a;
+          cursor: pointer; }
+          .reservation .reservation-box .box-left ul li span {
+            padding: 7px 15px;
+            border-radius: 100%;
+            background-color: #494c48;
+            margin-right: 15px;
+            color: white; }
+            .reservation .reservation-box .box-left ul li span i {
+              font-size: 15px; }
+            .reservation .reservation-box .box-left ul li span:hover {
+              background-color: #12ce8f; }
+          .reservation .reservation-box .box-left ul li .makedpart {
+            background-color: #150767 !important; }
+        .reservation .reservation-box .box-left ul .makedtext {
+          color: white !important; }
+    .reservation .reservation-box .box-right {
+      width: 70%;
+      background-color: aliceblue;
+      position: relative; }
+      .reservation .reservation-box .box-right .right-box-header {
+        width: 100%;
+        margin: 60px 0px;
+        border-bottom: 1px solid #ededed; }
+        .reservation .reservation-box .box-right .right-box-header h4 {
+          color: #040931;
+          margin-left: 40px; }
+      .reservation .reservation-box .box-right .right-box-content ul {
+        list-style: none; }
+        .reservation .reservation-box .box-right .right-box-content ul li {
+          width: 97%;
+          padding: 20px 15px;
+          display: flex;
+          justify-content: left;
+          gap: 30px;
+          border-radius: 3px;
+          margin-top: 15px;
+          background-color: white; }
+          .reservation .reservation-box .box-right .right-box-content ul li img {
+            width: 70px;
+            height: 70px;
+            border-radius: 100%;
+            object-fit: cover; }
+          .reservation .reservation-box .box-right .right-box-content ul li p {
+            color: #9c9c9c; }
+      .reservation .reservation-box .box-right .right-box-content #services li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; }
+        .reservation .reservation-box .box-right .right-box-content #services li .service-box {
+          display: flex;
+          justify-content: left;
+          gap: 30px; }
+        .reservation .reservation-box .box-right .right-box-content #services li h3 {
+          margin-right: 20px;
+          color: #0bd40b; }
+      .reservation .reservation-box .box-right .right-box-content .dates .date-header {
+        width: 92%;
+        margin: auto;
+        text-align: center; }
+        .reservation .reservation-box .box-right .right-box-content .dates .date-header label {
+          font-size: 20px;
+          font-weight: 600; }
+        .reservation .reservation-box .box-right .right-box-content .dates .date-header input {
+          width: 30%;
+          height: 40px;
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+          text-align: center;
+          border: 1px solid #cdcdcd;
+          font-size: 20px;
+          margin-left: 20px;
+          box-shadow: 0px 0px 1px; }
+          .reservation .reservation-box .box-right .right-box-content .dates .date-header input:focus {
+            outline: none; }
+      .reservation .reservation-box .box-right .right-box-content .dates .date-content {
+        width: 92%;
+        margin: 40px auto;
+        display: flex;
+        justify-content: space-around; }
+        .reservation .reservation-box .box-right .right-box-content .dates .date-content .date-box {
+          width: 15%;
+          background-color: #112738;
+          text-align: center;
+          padding: 2px 0px;
+          border-radius: 3px; }
+          .reservation .reservation-box .box-right .right-box-content .dates .date-content .date-box p {
+            margin-top: 10px;
+            font-weight: 600;
+            color: white; }
+      .reservation .reservation-box .box-right .right-box-content .confirmation .confirmation-header {
+        width: 92%;
+        margin: 0px auto;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center; }
+        .reservation .reservation-box .box-right .right-box-content .confirmation .confirmation-header input {
+          width: 100%;
+          height: 50px;
+          border: 1px solid #d3d0d0;
+          border-radius: 3px;
+          padding-left: 10px;
+          margin-top: 20px; }
+          .reservation .reservation-box .box-right .right-box-content .confirmation .confirmation-header input:focus {
+            outline: none; }
+          .reservation .reservation-box .box-right .right-box-content .confirmation .confirmation-header input::placeholder {
+            font-weight: 600; }
+        .reservation .reservation-box .box-right .right-box-content .confirmation .confirmation-header label {
+          font-weight: 600;
+          font-size: 19px;
+          color: #01010e;
+          margin-top: 10px;
+          margin-left: 5px; }
+      .reservation .reservation-box .box-right .right-box-content .confirmation .confirmation-content {
+        width: 92%;
+        margin: 30px auto;
+        background-color: white;
+        padding: 4px 20px;
+        position: relative;
+        z-index: 999 !important; }
+        .reservation .reservation-box .box-right .right-box-content .confirmation .confirmation-content h5 {
+          margin-top: 20px;
+          color: #040467; }
+          .reservation .reservation-box .box-right .right-box-content .confirmation .confirmation-content h5 span {
+            color: black; }
+          .reservation .reservation-box .box-right .right-box-content .confirmation .confirmation-content h5 .btngreen {
+            color: #0bd40b; }
+      .reservation .reservation-box .box-right .right-box-footer {
+        width: 100%;
+        height: 70px;
+        background-color: white;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 30px; }
+        .reservation .reservation-box .box-right .right-box-footer button {
+          width: 100px;
+          height: 48px;
+          border: none;
+          border-radius: 3px;
+          background-color: #442b96;
+          color: white;
+          font-weight: 700; }
+
+.cliceked {
+  border: 1px solid green; }
+
+.clicekedno {
+  border: none; }
+
+.reservationcase {
+  display: none; }
+
+#confirimbooking {
+  width: 20%; }
+
+.dateclicked {
+  background-color: chartreuse !important; }
+
+#modal {
+  width: 25%;
+  height: 200px;
+  box-shadow: 0px 0px 15px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  color: chartreuse;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -70%);
+  display: none;
+  z-index: 999;
+  background-color: white; }
+
+#alert {
+  width: 15%;
+  height: 100px;
+  z-index: 99;
+  position: absolute;
+  background-color: #545fa5;
+  bottom: 13%;
+  right: 0%;
+  text-align: right;
+  border-radius: 3px;
+  opacity: 0;
+  transition: 1s; }
+  #alert h4 {
+    margin-right: 100px;
+    color: red; }
+  #alert span {
+    font-size: 27px;
+    margin-right: 10px;
+    cursor: pointer;
+    color: white; }
+
+#alert.active {
+  right: 3%;
+  opacity: 1; }
+
+.inpdivres {
+  width: 45%; }

@@ -1,0 +1,290 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.reservation{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-color: rgba(4, 25, 59,0.9);
+    .reservation-box{
+        width: 60%;
+        height: 75%;
+        margin: auto;
+        background-color: white;
+        display: flex;
+        .box-left{
+            width: 30%;
+            height: 100%;
+            background-color: rgb(17, 39, 56);
+            ul{
+                list-style: none;
+                padding-left: 0px !important;
+                padding-top: 40px;
+                li{
+                    width: 100%;
+                    padding: 5px 7px;
+                    margin: 30px 10%;
+                    font-size: 19px;
+                    color: rgb(156, 154, 154);
+                    cursor: pointer;
+                    span{
+                        padding: 7px 15px;
+                        border-radius: 100%;
+                        background-color: rgb(73, 76, 72);
+                        margin-right: 15px;
+                        color: white;
+                        i{
+                            font-size: 15px;
+                        }
+                        &:hover{
+                            background-color: rgb(18, 206, 143);
+                        }
+                    }
+                    .makedpart{
+                        background-color: rgb(21, 7, 103) !important;
+                    }
+                    
+                }
+                .makedtext{
+                    color: white !important;
+
+                }
+            }
+        }
+        .box-right{
+            width: 70%;
+            background-color: aliceblue;
+            position: relative;
+            .right-box-header{
+                width: 100%;
+                margin: 60px 0px;
+                border-bottom: 1px solid rgb(237, 237, 237);
+                h4{
+                    color: rgb(4, 9, 49);
+                    margin-left: 40px;
+                }
+            }
+            .right-box-content{
+                ul{
+                    list-style: none;
+                    li{  width: 97%;
+                        padding: 20px 15px;
+                        display: flex;
+                        justify-content: left;
+                        gap: 30px;
+                        border-radius: 3px;
+                        margin-top: 15px;
+                        background-color: white;
+                        img{
+                            width: 70px;
+                            height: 70px;
+                            border-radius: 100%;
+                            object-fit: cover;
+                        }
+                        p{
+                            color: rgb(156, 156, 156);
+                        }
+                    }
+                }
+                #services{
+                    li{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        .service-box{
+                            display: flex;
+                            justify-content: left;
+                            gap: 30px;
+                        }
+                        h3{
+                            margin-right: 20px;
+                            color: rgb(11, 212, 11);
+                        }
+                    }
+                }
+                .dates{
+                    .date-header{
+                        width: 92%;
+                        margin: auto;
+                        text-align: center;
+                        label{
+                            font-size: 20px;
+                            font-weight: 600;
+                        }
+                        input{
+                            width: 30%;
+                            height: 40px;
+                            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                            text-align: center;
+                            border: 1px solid rgb(205, 205, 205);
+                            font-size: 20px;
+                            margin-left: 20px;
+                            box-shadow: 0px 0px 1px;
+                            &:focus{
+                                outline: none;
+                            }
+                        }
+                    }
+                    .date-content{
+                        width: 92%;
+                        margin: 40px auto;
+                        display: flex;
+                        justify-content: space-around;
+                        .date-box{
+                            width: 15%;
+                            background-color: rgb(17, 39, 56);
+                            text-align: center;
+                            padding: 2px 0px;
+                            border-radius: 3px;
+                            p{
+                                margin-top: 10px;
+                                font-weight: 600;
+                                color: white;
+                            }
+                        }
+                    }
+                }
+                .confirmation{
+                    .confirmation-header{
+                        width: 92%;
+                        margin: 0px auto;
+                        display: flex;
+                        justify-content: space-between;
+                        flex-wrap: wrap;
+                        align-items: center;
+                        input{
+                            width: 100%;
+                            height: 50px;
+                            border: 1px solid rgb(211, 208, 208);
+                            border-radius: 3px;
+                            padding-left: 10px;
+                            margin-top: 20px;
+                            &:focus{
+                                outline: none;
+                            }
+                            &::placeholder{
+                                font-weight: 600;
+                            }
+
+                        }
+                        label{
+                            font-weight: 600;
+                            font-size: 19px;
+                            color: rgb(1, 1, 14);
+                            margin-top: 10px;
+                            margin-left: 5px;
+
+                            
+                        }
+                    }
+                    .confirmation-content{
+                        width: 92%;
+                        margin: 30px auto;
+                        background-color: white;
+                        padding: 4px 20px;
+                        position: relative;
+                        z-index: 999 !important;
+                        h5{
+                            margin-top: 20px;
+                            color: rgb(4, 4, 103);
+                            span{
+                                color: black;
+                                
+                            }
+                            .btngreen{
+                                color: rgb(11, 212, 11);
+                            }
+                        }
+                    }
+
+                }
+            }
+            .right-box-footer{
+                width: 100%;
+                height: 70px;
+                background-color: white;
+                position: absolute;
+                bottom: 0px;
+                left: 0px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0px 30px;
+                button{
+                    width: 100px;
+                    height: 48px;
+                    border: none;
+                    border-radius: 3px;
+                    background-color: rgb(68, 43, 150);
+                    color: white;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}
+.cliceked{
+    border: 1px solid green;
+}
+.clicekedno{
+    border: none;
+}
+.reservationcase{
+    display: none;
+}
+#confirimbooking{
+    width: 20%;
+}
+
+.dateclicked{
+    background-color: chartreuse !important;
+}
+#modal{
+    width: 25%;
+    height: 200px;
+    box-shadow: 0px 0px 15px green($color: #000000);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    color: chartreuse;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-70%);
+    display: none;
+    z-index: 999;
+    background-color: white;
+}
+#alert{
+    width: 15%;
+    height: 100px;
+    z-index: 99;
+    position: absolute;
+    background-color: rgb(84, 95, 165);
+    bottom: 13%;
+    right: 0%;
+    text-align: right;
+    border-radius: 3px;
+    opacity: 0;
+    transition: 1s;
+    h4{
+        margin-right: 100px;
+        color: red;
+    }
+    span{
+        font-size: 27px;
+        margin-right: 10px;
+        cursor: pointer;
+        color: white;
+    }
+}
+#alert.active{
+    right: 3%;
+    opacity: 1;
+}
+.inpdivres{
+    width: 45%;
+}
